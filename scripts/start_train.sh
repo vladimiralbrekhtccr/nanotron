@@ -11,4 +11,4 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 cd /scratch/vladimir_albrekht/projects/smollm/nanotron
 eval "$(conda shell.bash hook)"
 conda activate smoll_llm_v
-CUDA_LAUNCH_BLOCKING=1 CUDA_DEVICE_MAX_CONNECTIONS=1 torchrun --nproc_per_node=8 run_train.py --config-file /scratch/vladimir_albrekht/projects/smollm/nanotron/configs/qwen_500M.yaml
+CUDA_LAUNCH_BLOCKING=1 CUDA_DEVICE_MAX_CONNECTIONS=1 torchrun --nproc_per_node=8 run_train.py --config-file /scratch/vladimir_albrekht/projects/smollm/nanotron/configs/qwen_3B.yaml
